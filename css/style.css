@@ -440,7 +440,23 @@ p {
 
 .liveImage {
     padding-top: 70px;
+    transition: .5s;
 }
+
+.liveImage img {
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.liveImage img:hover {
+    border-radius: 25px;
+    box-shadow: 37px 37px 80px 0 rgba(255, 255, 255, 0.1);
+}
+
+.liveImage:hover {
+    transform: scale(1.1);
+}
+
 
 .mainliveImage {
     display: flex;
@@ -452,3 +468,183 @@ p {
 }
 
 /* Live Part End */
+
+/* Sale Part Start */
+#salePart {
+    background: #191919;
+    padding: 90px 0;
+}
+
+.saleHeading {
+    text-align: right;
+}
+
+.saleHeading h3 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 46px;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+}
+
+.saleHeading h3::after {
+    position: absolute;
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    bottom: 8px;
+    right: 76px;
+    content: "";
+}
+
+.saleItem {
+    padding: 50px 0 60px;
+}
+
+.saleItemImage {
+    border-radius: 25px;
+    padding-bottom: 10px;
+    transition: .5s;
+}
+
+.saleItemImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px 20px rgba(255, 255, 255, 0.1);
+    background: rgba(155, 155, 155, 0.25);
+}
+
+.saleItemImage img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.saleItemImage h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 26px;
+    padding: 20px 0 10px 10px;
+}
+
+.saleItemImage h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    line-height: 24px;
+    padding: 0 0 10px 10px;
+}
+
+.saleItemPrice {
+    display: flex;
+    padding-left: 10px;
+}
+
+.saleItemPrice h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    padding: 5px;
+    background: #FF4655;
+    border-radius: 30px;
+}
+
+.saleItemPrice h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    text-decoration: line-through;
+}
+
+.saleItemPrice h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    padding: 10px 0;
+    text-decoration: line-through;
+}
+
+/* Catalog Sub Part of Sale Part Start */
+.catalogHeading {
+    padding-bottom: 30px;
+}
+
+.catalogHeading h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    line-height: 24px;
+}
+
+.catalogBox {
+    padding: 45px 0;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogBoxLeft {
+    padding-left: 45px;
+}
+
+.catalogBoxLeft h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF4655;
+    font-family: "Oswald", sans-serif;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+.catalogBoxLeft h3 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 46px;
+}
+
+.catalogBoxLeft p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    line-height: 24px;
+    padding: 25px 0;
+}
+
+.catalogBoxLeft a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    line-height: 24px;
+    padding: 15px 30px;
+    background: #121212;
+    display: inline-block;
+    transition: .5s;
+}
+
+.catalogBoxLeft a:hover {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    background: #FF4655;
+    border-radius: 10px;
+}
+
+.catalogBoxRight img {
+    padding-right: 110px;
+}
+
+/* Catalog Sub Part of Sale Part End */
+
+/* Sale Part End */
