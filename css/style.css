@@ -144,37 +144,22 @@ p {
     line-height: 24px;
     padding-bottom: 50px;
 }
-
-.vmBtn a {
-    color: #121212;
+.bannarBtn a{
     font-size: 16px;
     font-weight: 400;
+    color: #121212;
     font-family: "Oswald", sans-serif;
+    padding: 15px 25px;
+    background: #fff;
     transition: .5s;
 }
-
-.vmBtn a:hover {
-    color: white;
+.bannarBtn a:hover{
     font-size: 18px;
     font-weight: 700;
-
-}
-
-.vmBtnone {
-    padding: 15px;
-    background: #fff;
-    width: 18%;
-    transition: .5s;
-}
-
-.vmBtnone:hover {
-    background: rgb(71, 129, 255);
-    transform: scale(1.15);
+    color: #fff;
+    background: rgb(71, 123, 255);
     border-radius: 50px;
-    width: 21%;
 }
-
-
 .bannarSocialpart {
     padding-top: 160px;
 }
@@ -318,14 +303,16 @@ p {
     background: #121212;
     padding-bottom: 80px;
 }
-.counter{
-    display: inline-block;
-}
+
 .counterItem{
     padding: 30px 90px;
     background: #212121;
     border-radius: 0 50px;
-    width: 95%;
+    transition: .5s;
+}
+.counterItem:hover{
+    transform: scale(1.1);
+    background: #333333;
 }
 .counterItem h3{
     font-size: 60px;
@@ -333,11 +320,69 @@ p {
     font-family: "Barlow Condensed", sans-serif;
     color: #fff;
     padding-bottom: 20px;
+    text-align: center;
+}
+.counterItem i{
+    font-size: 12px;
+    color: #FF4655;
 }
 .counterItem p{
     font-size: 18px;
     font-weight: 300;
     font-family: "Oswald", sans-serif;
     color: #fff;
+    text-align: center;
 }
 /* Counter Part End */
+
+/* Popular Part Start */
+#popularPart{
+    background: #191919;
+    padding: 115px 0 90px 0;
+}
+
+.popularHeading h3{
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2px;
+    text-align: right;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.popularHeading h3::after{
+    position: absolute;
+    height: 3px;
+    width: 105px;
+    background: #FF4655;
+    right: 115px;
+    bottom: 0;
+    content: "";
+}
+.popularButtonpart{
+    position: relative;
+}
+.popularButton{
+    position: absolute;
+    top: -120px;
+    right: 0;
+}
+.popularButton1{
+    color: #fff;
+    font-size: 40px;
+    transition: .5s;
+}
+.popularButton1:hover{
+    color: tomato;
+}
+.popularButton2{
+    color: #fff;
+    font-size: 40px;
+    transition: .5s;
+}
+.popularButton2:hover{
+    color: tomato;
+}
+/* Popular Part End */
